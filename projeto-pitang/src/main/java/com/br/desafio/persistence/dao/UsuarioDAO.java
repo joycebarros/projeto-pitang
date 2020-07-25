@@ -151,8 +151,8 @@ public class UsuarioDAO implements InterfaceUsuarioDAO {
 
 		while (resultSet.next()) {
 
-			if (hashIdObjetoUsuario.containsKey(String.valueOf(resultSet.getInt("ID")))) {
-				usuario = hashIdObjetoUsuario.get(String.valueOf(resultSet.getInt("ID")));
+			if (hashIdObjetoUsuario.containsKey(String.valueOf(resultSet.getInt("U.ID")))) {
+				usuario = hashIdObjetoUsuario.get(String.valueOf(resultSet.getInt("U.ID")));
 			} else { // se nao existir
 				usuario = new Usuario();
 				usuario.setId(resultSet.getInt("U.ID"));
