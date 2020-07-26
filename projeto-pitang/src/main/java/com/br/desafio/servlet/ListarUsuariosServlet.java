@@ -14,7 +14,7 @@ import com.br.desafio.controlador.ControladorUsuario;
 import com.br.desafio.entidade.Usuario;
 import com.br.desafio.filter.UsuarioLogado;
 
-@WebServlet(urlPatterns = "/listarTodos")
+@WebServlet(urlPatterns = "/listar")
 public class ListarUsuariosServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
