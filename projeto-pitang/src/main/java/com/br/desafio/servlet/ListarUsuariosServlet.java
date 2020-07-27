@@ -23,7 +23,7 @@ public class ListarUsuariosServlet extends HttpServlet {
 		
 		String logout = req.getParameter("logout");
 		HttpSession session = req.getSession();
-		
+		 
 		//se o usuario quiser deslogar
 		if(logout != null) {
 			session.removeAttribute("usuarioLogado");

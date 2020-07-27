@@ -29,7 +29,7 @@
 		<c:if test="${not empty mensagem}"><div align="center" id="mensagem" class="p-3 mb-2 bg-success text-white">${mensagem}</div></c:if>
 		
 		<div align="right">
-			<button class="btn btn-dark" name="botao" type="submit" value="logout" onclick="window.location.href='listarTodos?logout=sim'">Logout</button>
+			<button class="btn btn-dark" name="botao" type="submit" value="logout" onclick="window.location.href='listar?logout=sim'">Logout</button>
 		</div>
 		<br>
 		<input type="hidden" name="idUsuario" id="idUsuario" value="">		

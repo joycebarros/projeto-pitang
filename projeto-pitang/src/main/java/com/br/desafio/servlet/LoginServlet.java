@@ -39,7 +39,7 @@ public class LoginServlet extends HttpServlet {
 				if(usuarioLogado != null) {
 					HttpSession session = req.getSession();
 					session.setAttribute("usuarioLogado", usuarioLogado);
-					resp.sendRedirect("listarTodos");
+					resp.sendRedirect("listar");
 				}
 			} catch (UsuarioSenhaException e) {
 				req.setAttribute("erro", "Usuário ou senha inválidos!");
